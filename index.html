@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <TMC-Estacionamiento>
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <h1>Taller de Matemática Computacional</h1>
+            <h3>Trabajo Practico Especial</h3>
+            <h3>Estacionamiento</h3>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row mt-2">
+                        <label for="lugares">Lugares</label>
+                        <input class="text-right" id="lugares" type="number" value="20">
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button" id="btnEstacionar" name="button"> A - Estacionar</button>
+                        <label for="intentos">(n)</label>
+                        <input class="text-right" id="intentos" type="number" value="20">
+                        <label for="lugares">Colision en</label>
+                        <select id="colision">
+                        </select>
+                    </div>
+                    <div class="row mt-2">
+                        <button type="button" id="btnProbabilidad" name="button">B - Probabilidad</button>
+                        <label for="prob">(m)</label>
+                        <input class="text-right" id="cantProbabilidad" type="number" value="1">
+                        <input class="text-right" id="probabilidad" type="number" value="0" disabled>
+                    </div>
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <div class="row mt-2">
+                                    <label>(n1)</label>
+                                    <input class="col-1 text-right" id="intentos_1" type="text" value="5">
+                                    <label>(m=10)</label>
+                                    <input class="col-2 text-right" id="probabilidad_1_1" type="text" value="0"
+                                        disabled>
+                                    <label>(m=100)</label>
+                                    <input class="col-2 text-right" id="probabilidad_1_2" type="text" value="0"
+                                        disabled>
+                                    <label>(m=1000)</label>
+                                    <input class="col-2 text-right" id="probabilidad_1_3" type="text" value="0"
+                                        disabled>
+                                </div>
+                                <div class="row mt-2">
+                                    <label>(n2)</label>
+                                    <input class="col-1 text-right" id="intentos_2" type="text" value="10">
+                                    <label>(m=10)</label>
+                                    <input class="col-2 text-right" id="probabilidad_2_1" type="text" value="0"
+                                        disabled>
+                                    <label>(m=100)</label>
+                                    <input class="col-2 text-right" id="probabilidad_2_2" type="text" value="0"
+                                        disabled>
+                                    <label>(m=1000)</label>
+                                    <input class="col-2 text-right" id="probabilidad_2_3" type="text" value="0"
+                                        disabled>
+                                </div>
+                                <div class="row mt-2">
+                                    <label>(n3)</label>
+                                    <input class="col-1 text-right" id="intentos_3" type="text" value="15">
+                                    <label>(m=10)</label>
+                                    <input class="col-2 text-right" id="probabilidad_3_1" type="text" value="0"
+                                        disabled>
+                                    <label>(m=100)</label>
+                                    <input class="col-2 text-right" id="probabilidad_3_2" type="text" value="0"
+                                        disabled>
+                                    <label>(m=1000)</label>
+                                    <input class="col-2 text-right" id="probabilidad_3_3" type="text" value="0"
+                                        disabled>
+                                </div>
+                                <div class="row mt-2">
+                                    <button type="button" id="btnProbabilidad_c" name="button">C - Probar B</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <button type="button" id="btnProbabilidad_d" name="button">D - Probar epsilon</button>
+                        <label >(e)</label>
+                        <input class="col-2 text-right" id="epsilon" type="number" value="0.01">
+                        <label >(m)</label>
+                        <input class="col-2 text-right" id="cantProbabilidad_d" type="number" value="100">
+                        <select id="prob_d">
+                        </select>                        
+                        <label >cant</label>
+                        <input class="col-1 text-right" id="cant_d" type="number" value="0">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <table class="table table-sm">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Lugar</th>
+                                <th scope="col">Patente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/javaScript.js" charset="utf-8"></script>
+</body>
+
+</html>
