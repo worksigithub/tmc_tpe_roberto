@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let cantProbabilidad = document.querySelector("#cantProbabilidad_d").value;
         let epsilon = document.querySelector("#epsilon").value;
         let intentos = document.querySelector("#intentos").value;
-        
+        let contador = 0;
         let anterior = 0;
         let diferencia = 10;
         while (diferencia>epsilon) {
@@ -88,7 +88,10 @@ document.addEventListener("DOMContentLoaded", function () {
             diferencia = Math.abs(anterior - probabilidadLaplace);
             console.log("Dif "+diferencia+" - anterior "+anterior+" prob "+probabilidadLaplace);
             anterior = probabilidadLaplace;
-            
+            contador++;  
+            if(contador<10){
+                diferencia=10;
+            }         
         }
         document.querySelector("#cant_d").value = elSelect_d.length;
         
